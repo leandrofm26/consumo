@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor</title>
+</head>
+
+
+<body>
+    
+</body>
+
+
+<script>
+
+    var Rodado = window.prompt("Quantos km andou?") //KM Rodado
+
+    var Valor = window.prompt("Valor")//Valor de cada m3
+
+    var Totalm3 =window.prompt("Total de Metros Cubicos")
+var soma = (Rodado/Totalm3)
+    var Resultado =Rodado  /Totalm3
+    window.alert("Você rodou  " +Rodado +"KM, E Adicionou R$  " +Valor   )
+
+    window.document.write("Seu Carro Fez "+ Rodado/Totalm3 +" Por cada Metro Cúbico M3" )
+
+window.document.write(" Economizou "+Rodado%Valor)
+</script>
+</html>
