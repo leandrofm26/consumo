@@ -17,28 +17,29 @@
 
 
 
-var Valoremreais = window.prompt ("Total em R$, Exemplo 30 ")//Total gasto
-var Valor = window.prompt("Valo do Metro Cúbico R$ Exemplo 3.09")//Valor de cada m3
-    var Rodado = window.prompt("KM Rodado Exemplo 100") //KM Rodado
+var Valoremreais = window.prompt ("TOTAL EM DINHEIRO R$, Exemplo 30 ")//Total gasto
+var Valor = window.prompt("VALOR DO GNV R$ EXEMPLO 3.09")//Valor de cada m3
+ 
+    var Rodado = window.prompt("KM RODADOS EXEMPLO 100") //KM Rodado
 
     
-
+    var arredondadoParaCima = Math.ceil(Valor);
     
 
   
 
 
 
-  print(math.trunc(total))
+  
 
-var soma = (Valoremreais/Valor)
+var soma = Valoremreais/Valor
 
     var Resultado =  soma*Rodado
     var total =Resultado.toFixed();
-  
+    
     window.alert("Você rodou  " +Rodado +"  KM, E Adicionou R$  " +Valoremreais  +"Reais" )
    
-    window.document.write("Seu Carro Fez "+ total +"  KM Por  Metro Cúbico " +Valor)
+    window.document.write("Seu Carro Fez "+ Math.ceil(soma) +"  KM Por  Metro Cúbico " +Valor)
     
 		
 //Geolocalização
