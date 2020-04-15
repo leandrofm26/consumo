@@ -32,9 +32,9 @@ var Valor = window.prompt("VALOR DO GNV R$ EXEMPLO 3.09")//Valor de cada m3
 
   
 
-var soma = Valoremreais/Valor
+var soma =Math.floor(Valoremreais/Valor)
 
-    var Resultado =  Math.floor(soma*Rodado)
+    var Resultado =  (soma*Rodado)
     var total =(Resultado)
     
     window.alert("Você rodou  " +Rodado +"  KM, E Adicionou R$  " +Valoremreais  +"Reais" )
