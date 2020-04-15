@@ -32,14 +32,14 @@ var Valor = window.prompt("VALOR DO GNV R$ EXEMPLO 3.09")//Valor de cada m3
 
   
 
-var soma =Valoremreais/Valor.toLocaleString(2)
+var soma =Valoremreais/Valor
 
     var Resultado =  (soma*Rodado)
     var total =(Resultado)
     
     window.alert("Você rodou  " +Rodado +"  KM, E Adicionou R$  " +Valoremreais  +"Reais" )
    
-    window.document.write("Seu Carro Fez "+(Resultado) +"  KM Por  Metro Cúbico GNV, " +Valor)
+    window.document.write("Seu Carro Fez "+Math.round(Resultado) +"  KM Por  Metro Cúbico GNV, " +Valor)
     
 		
 //Geolocalização
