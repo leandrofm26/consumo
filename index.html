@@ -19,7 +19,7 @@
 
 
 var Valoremreais = window.prompt ("TOTAL EM DINHEIRO R$, Exemplo 30 ")//Total gasto
-var Valor = window.prompt ("VALOR DO GNV  EXEMPLO SE O GNV CUSTAR R$3.09, COLOQUE (309), NÃO USE PONTOS.")//Valor de cada m3
+var Valor = window.prompt ("VALOR DO GNV  EXEMPLO: SE O GNV CUSTAR R$3.09, COLOQUE (309), NÃO USE PONTOS.")//Valor de cada m3
  
     var Rodado = window.prompt("KM RODADOS EXEMPLO 100") //KM Rodado
 
@@ -28,14 +28,14 @@ var Valor = window.prompt ("VALOR DO GNV  EXEMPLO SE O GNV CUSTAR R$3.09, COLOQU
     
     var E=Rodado/7
     var G=Rodado/10
-    var Gnv=Rodado/13
+    var Gnv=Rodado
     var gnv2=Valor
     
    
 
 
 var soma = Valoremreais/ Valor //calculo Km/m3
-var Gnv= (Rodado*soma.toFixed(4))
+var Gnv= Rodado/soma.toFixed(100)
     var Resultado = soma*Rodado
     var total =  (Resultado)
 
@@ -43,7 +43,7 @@ var Gnv= (Rodado*soma.toFixed(4))
     
     window.alert("Você rodou  " +Rodado +"  KM, E Adicionou R$  " +Valoremreais  +"Reais"+Gnv  )
    
-    window.document.write( "Você rodou  "+Rodado +"Km,  Seu carro tem autonomia de, "+(Gnv)  +"km/m3 ;"+"Para andar essa distância no Etanol Você Precisaria de"+E.toFixed()+"<br>" +" Litros  , e na Gasolina, "+G +"Litros.")
+    window.document.write( "Você rodou  "+Rodado +"Km,  Seu carro tem autonomia de, "+(Gnv)  +"km/m3 ;"+"Para andar essa distância "+Rodado +" Km no (Etanol) Você Precisaria de"+E.toFixed()+"<br>" +" Litros de (Etanol) , ou Gasolina, "+G +"Litros de Gasolina.")
     
     //var t= document.write   ("Para andar essa distância no Etanol Você Precisaria de,"+E.toFixed()+"<br>"+"  LT  , Já na  Gasolina, "  +G+"  LT ,  "+ soma*Rodado+"<br>")
 //Geolocalização
